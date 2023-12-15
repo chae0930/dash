@@ -46,7 +46,7 @@ tidydata1=df.pivot_table(
 
 # 1-(1),(2),(3) 에 대응하는 plotly figure를 아래와 같은 이름으로 저장
 fig1 = px.density_heatmap(
-    data_frame=tidydata.set_index('dayofweek').rename({0:'월',1:'화',2:'수',3:'목',4:'금',5:'토',6:'일'}).reset_index(),
+    data_frame=tidydata1.set_index('dayofweek').rename({0:'월',1:'화',2:'수',3:'목',4:'금',5:'토',6:'일'}).reset_index(),
     x='pickup_hour',
     y='dayofweek',
     z='speed_mean',
@@ -70,12 +70,12 @@ fig1.update_layout(layout)
 
 ```{python}
 #| title: 요일,시간에 따른 평균이동거리 시각화        
-fig2.show()
+#fig2.show()
 ```
 
 # 기말고사1-(3)
 
 ```{python}
 #| title: 속력별 경로 시각화
-fig3.show()
+#fig3.show()
 ```
