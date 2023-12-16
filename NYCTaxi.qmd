@@ -160,4 +160,5 @@ fig2.update_layout(layout2)
 ```{python}
 #| title: 속력별 경로 시각화
 fig3.update_layout(layout3)
+
 ```
